@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/menu4_back"
+        android:background="@drawable/back2"
+        android:layout_marginLeft="8dp"
+        />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/menu4"
+        />
+
+</LinearLayout>

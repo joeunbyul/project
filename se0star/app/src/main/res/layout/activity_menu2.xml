@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="15dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/round2"
+        android:layout_margin="15dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="유통기한이 "
+        android:textSize="17dp"
+        android:layout_marginRight="10dp"/>
+    <EditText
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu2_editText"
+        android:background="#00ffffff"
+        android:singleLine = "true"
+        android:textSize="17dp"
+        android:lines = "1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일 남은 식품들은?"
+            android:textSize="17dp"/>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/menu2_button"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/submit5"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/rectangle2"
+        android:layout_margin="15dp">
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:padding="8dp"></ListView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="해당되는 식품이 없습니다."
+            android:textSize="20dp"
+            android:id="@+id/menu2_none"
+            android:visibility="invisible"/>
+    </FrameLayout>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back3"
+        android:id="@+id/menu2_reset"
+        android:layout_margin="15dp"
+        android:visibility="gone"/>
+</LinearLayout>

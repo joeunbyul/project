@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu1"
+            android:icon="@drawable/settings3"
+            android:title="유통기한 설정" />
+        <item
+            android:id="@+id/nav_menu2"
+            android:icon="@drawable/search"
+            android:title="유통기한 검색" />
+        <item
+            android:id="@+id/nav_menu3"
+            android:icon="@drawable/timer2"
+            android:title="음식 타이머" />
+        <item
+            android:id="@+id/nav_menu4"
+            android:icon="@drawable/list3"
+            android:title="장바구니" />
+    </group>
+</menu>

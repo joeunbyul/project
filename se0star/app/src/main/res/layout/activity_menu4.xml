@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/round2"
+        android:layout_marginTop="15dp">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/menu4_EditText"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:hint="추가할 리스트를 적어주세요"
+            android:textColorHint="#5577ab68"
+            android:layout_marginLeft="15dp"
+            android:singleLine = "true"
+            android:lines = "1"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/menu4_plus"
+            android:background="@drawable/submit5"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/basket_list"
+        android:choiceMode="multipleChoice"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/rectangle2"
+        android:padding="15dp"
+        android:layout_marginBottom="15dp"></ListView>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/error"
+        android:backgroundTint="#ffb95e"
+        android:id="@+id/menu4_minus"/>
+</LinearLayout>

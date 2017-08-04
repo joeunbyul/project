@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">냉장고를 부탁해</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="kind_spinner">
+        <item>육류</item>
+        <item>채소류</item>
+        <item>과일</item>
+        <item>냉동식품</item>
+        <item>해산물</item>
+        <item>나물반찬</item>
+        <item>마른반찬</item>
+        <item>기타반찬</item>
+        <item>유제품</item>
+        <item>기타</item>
+    </string-array>
+
+</resources>

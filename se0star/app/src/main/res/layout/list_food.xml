@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:id="@+id/list_food_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="7dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round2"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="음식 종류"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:textColor="#77ab68"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="#77ab68" />
+            <EditText
+                android:id="@+id/listFoodKind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00ffffff"
+                android:textColorHint="#5577ab68"
+                android:textCursorDrawable="@null"
+                android:textColor="#88000000"
+                android:layout_marginLeft="7dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint="입력하세요"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_listFoodKind"
+                android:layout_weight="1"
+                android:dropDownWidth="100dp"></Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round2"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="음식 단위"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:textColor="#77ab68"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="#77ab68" />
+            <EditText
+                android:id="@+id/listFoodUnit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00ffffff"
+                android:textColorHint="#5577ab68"
+                android:textCursorDrawable="@null"
+                android:textColor="#88000000"
+                android:layout_marginLeft="7dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/round2"
+        android:layout_marginBottom="7dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="음식 이름"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:textColor="#77ab68"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="#77ab68" />
+        <EditText
+            android:id="@+id/listFoodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:textColorHint="#5577ab68"
+            android:textCursorDrawable="@null"
+            android:textColor="#88000000"
+            android:layout_marginLeft="7dp"
+            android:singleLine = "true"
+            android:lines = "1"
+            android:hint="입력하세요"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/round2"
+            android:layout_marginBottom="7dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="음식 수량"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:textColor="#77ab68"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:background="#77ab68" />
+            <EditText
+                android:id="@+id/listFoodNum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00ffffff"
+                android:textColorHint="#5577ab68"
+                android:textCursorDrawable="@null"
+                android:textColor="#88000000"
+                android:layout_marginLeft="7dp"
+                android:singleLine = "true"
+                android:lines = "1"
+                android:hint="입력하세요"
+                android:layout_weight="1"/>
+            <Button
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:background="@drawable/add"
+            android:id="@+id/listaddFoodnumsButton"
+            android:layout_marginRight="8dp"/>
+            <Button
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:background="@drawable/delete"
+                android:id="@+id/listdeleteFoodnumsButton"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/round2"
+        android:layout_marginBottom="7dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="구입 날짜"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:textColor="#77ab68"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="#77ab68" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:textSize="15dp"
+            android:textColorHint="#5577ab68"
+            android:hint="날짜를 선택해 주세요"
+            android:textColor="#88000000"
+            android:layout_weight="1"
+            android:id="@+id/listfoodstart"/>
+        <Button
+            android:id="@+id/listFoodStart"
+            android:background="@drawable/round3"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:text="선택"
+            android:textSize="13dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/round2"
+        android:layout_marginBottom="7dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="유통 기한"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:textColor="#77ab68"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="25dp"
+            android:background="#77ab68" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:textSize="15dp"
+            android:textColor="#88000000"
+            android:textColorHint="#5577ab68"
+            android:hint="유통기한을 선택해 주세요"
+            android:layout_weight="1"
+            android:id="@+id/listfoodfinal"/>
+        <Button
+            android:id="@+id/listFoodFinal"
+            android:background="@drawable/round3"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:text="선택"
+            android:textSize="13dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+</LinearLayout>
