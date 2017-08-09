@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.example.byul.myapplication.MainActivity"
+    android:id="@android:id/tabhost">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabs"
+            android:tabStripEnabled="false"></TabWidget>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#bbfb9a29" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/diary"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <DatePicker
+                    android:id="@+id/datePic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner">
+                </DatePicker>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dyearText"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="년 "/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dmonthText"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="월 "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/ddayText"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="일의 일기"/>
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:background="@drawable/round"
+                        android:id="@+id/edtDiary"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="#5577ab68"
+                        android:lines="12"/>
+                    <Button
+                        android:id="@+id/btnDiary"
+                        android:background="@drawable/round2"
+                        android:enabled="false"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:text="" />
+                </LinearLayout>
+
+            </LinearLayout> <!--다이어리-->
+
+            <LinearLayout
+                android:id="@+id/todo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/round2"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sort"></Spinner>
+                    <EditText
+                        android:id="@+id/edtTodo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="할 일을 입력해주세요"
+                        android:textColorHint="#5577ab68"
+                        android:layout_weight="1"
+                        android:singleLine = "true"
+                        android:lines = "1"
+                        android:background="#00ffffff" />
+                    <Button
+                        android:id="@+id/btnTodo"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/submit5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:background="@drawable/round"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="할일 등록 해주세요!"
+                            android:id="@+id/todoTextView"
+                            android:textSize="22dp"
+                            android:gravity="center_vertical"
+                            android:textColor="#33000000"
+                            android:textAlignment="center"/>
+                        <ListView
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/listView2"
+                            android:divider="#ffffffff"
+                            android:dividerHeight="8dp"
+                            android:focusable="false"
+                            android:fastScrollEnabled="true">
+                        </ListView>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout> <!--투두리스트-->
+
+            <LinearLayout
+                android:id="@+id/dday"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp"
+                android:orientation="vertical">
+
+                <include layout="@layout/activity_main2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout> <!--디데이-->
+
+        </FrameLayout>
+
+    </LinearLayout>
+</TabHost>

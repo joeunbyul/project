@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DayByDay</string>
+
+    <string-array name="sort_array">
+        <item>중요도 순</item>
+        <item>시간 순</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

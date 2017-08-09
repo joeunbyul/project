@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dday_modify"
+        android:icon="@drawable/edit"
+        android:title="수정" />
+    <item
+        android:id="@+id/dday_del"
+        android:icon="@drawable/del"
+        android:title="삭제"/>
+
+</menu>
