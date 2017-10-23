@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_search_default"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nadoo.tacademy.eunbyul_nanu.SearchDefault">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="49.7dp"
+        android:orientation="vertical"
+        android:layout_marginTop="23.7dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/keyword"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:textColor="#646464"
+                android:background="@drawable/keyword_box"
+                android:layout_marginRight="4dp"
+                android:text="#충전기"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginRight="4dp"
+                android:textSize="17sp"
+                android:textColor="#646464"
+                android:background="@drawable/keyword_box"
+                android:text="#실험복"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginRight="4dp"
+                android:textSize="17sp"
+                android:textColor="#646464"
+                android:background="@drawable/keyword_box"
+                android:text="#농구공"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginRight="4dp"
+                android:textSize="17sp"
+                android:textColor="#646464"
+                android:background="@drawable/keyword_box"
+                android:text="#축구공"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/recent_search"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="172dp"
+            android:src="@drawable/delete_all"/>
+
+    </LinearLayout>
+
+</LinearLayout>

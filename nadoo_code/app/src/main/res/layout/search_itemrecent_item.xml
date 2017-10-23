@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11.3dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginRight="250dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginLeft="24dp"
+            android:text="#"/>
+        <TextView
+            android:id="@+id/itemRecent_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="노트북"/>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/itemRecent_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/undo"
+        android:background="@android:color/transparent"
+        android:layout_gravity="right"
+        android:layout_marginRight="24dp"/>
+
+
+
+</LinearLayout>

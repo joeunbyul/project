@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D000000"
+    android:scrollbars="none"
+    tools:context=".RegisterItem">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:background="#eb675e">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/title_edit_item"
+                android:background="@android:color/transparent"
+                android:layout_centerInParent="true"/>
+        <!--    <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/TITLE_EDIT_ITEM"
+                android:layout_centerInParent="true"/>-->
+            <!--
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:background="#eb675e"
+                            android:layout_marginRight="123.3dp"
+                            android:layout_marginLeft="123.3dp"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true">
+
+                        </LinearLayout>
+            -->
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="9dp">
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="#33000000"
+                    android:layout_marginRight="7dp">
+                    <ImageButton
+                        android:id="@+id/photo_image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/edit_photo"
+                        android:layout_centerInParent="true"
+                        android:background="@null" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <!--물품명 등록 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_title_cardview"
+                card_view:cardCornerRadius="0dp"
+                android:elevation="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/register_item_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/name"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="10.3dp">
+                        <EditText
+                            android:id="@+id/edit_modifyitem_name"
+                            android:maxLength="15"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=" 물품명을 입력하세요."
+                            android:textColorHint="#646464"
+                            android:background="@drawable/text_box"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/register_location"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="7dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="#ffffff"
+                    android:layout_marginBottom="1dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/selectmap"
+                        android:src="@drawable/register_placeselect"
+                        android:background="@android:color/transparent"
+                        android:layout_marginBottom="1dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="#0D000000"
+                    android:gravity="center"
+                    android:layout_marginBottom="10.3dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#80000000"
+                        android:textSize="14dp"
+                        android:maxLines="1"
+                        android:id="@+id/item_maptitle"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:layout_gravity="center"
+                        android:text="/"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#80000000"
+                        android:textSize="14dp"
+                        android:layout_gravity="center"
+                        android:maxLines="1"
+                        android:id="@+id/item_mapsubtitle"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--카테고리 선택 -->
+        <android.support.v7.widget.CardView
+            card_view:cardCornerRadius="0dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/category_cardview"
+            android:layout_marginBottom="10dp"
+            android:elevation="0dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/category"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_shoolbook"
+                        android:background="@drawable/category_schoolbook_click"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:onClick="itemcategory"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_book"
+                        android:background="@drawable/category_book_click"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:onClick="itemcategory"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_sports"
+                        android:background="@drawable/category_sports_click"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:onClick="itemcategory"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_electrodevice"
+                        android:background="@drawable/category_electrodevice_click"
+                        android:layout_weight="1"
+                        android:onClick="itemcategory"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_life"
+                        android:background="@drawable/category_life_click"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:onClick="itemcategory"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_dog"
+                        android:background="@drawable/category_dog_click"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:onClick="itemcategory"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_travel"
+                        android:background="@drawable/category_travel_click"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:onClick="itemcategory"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_mobile"
+                        android:background="@drawable/category_mobile_click"
+                        android:layout_weight="1"
+                        android:onClick="itemcategory"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_fashion"
+                        android:background="@drawable/category_fashion_click"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:onClick="itemcategory"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_beauty"
+                        android:background="@drawable/category_beauty_click"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:onClick="itemcategory"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_instrument"
+                        android:background="@drawable/category_instrument_click"
+                        android:layout_weight="1"
+                        android:layout_marginRight="8dp"
+                        android:onClick="itemcategory"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_etc"
+                        android:background="@drawable/category_etc_click"
+                        android:layout_weight="1"
+                        android:onClick="itemcategory"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="16.3dp">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/category_realeatate"
+                        android:background="@drawable/category_realestate_click"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:onClick="itemcategory"/>
+
+                    <ImageButton
+                        android:id="@+id/category_talent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/category_talent_click"
+                        android:layout_marginRight="8dp"
+                        android:onClick="itemcategory"/>
+                    <ImageButton
+                        android:id="@+id/category_talent2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/category_talent_click"
+                        android:layout_marginRight="8dp"
+                        android:visibility="invisible"
+                        android:onClick="itemcategory"/>
+
+                    <ImageButton
+                        android:id="@+id/category_talent3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/category_talent_click"
+                        android:onClick="itemcategory"
+                        android:visibility="invisible" />
+
+
+                </LinearLayout>
+
+                <!-- 나인패치 이미지 넣는 부분-->
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!--설명글 입력 -->
+        <android.support.v7.widget.CardView
+            card_view:cardCornerRadius="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/info_cardview"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10.3dp"
+            android:elevation="0dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/item_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/detail_text"
+                    />
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="10.3dp">
+                    <EditText
+                        android:id="@+id/edit_modifyitem_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|top"
+                        android:hint=" 설명글을 입력하세요."
+                        android:textColorHint="#646464"
+                        android:background="@drawable/text_box"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!--가격 등록 -->
+        <android.support.v7.widget.CardView
+            card_view:cardCornerRadius="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/price_cardview"
+
+            android:elevation="0dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="7dp"
+                    android:src="@drawable/itemprice"
+                    />
+
+                <!-- 버튼 이미지-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+
+                    android:layout_marginTop="7dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="priceKind"
+                        android:id="@+id/register_time"
+                        android:layout_weight="1"
+                        android:background="@drawable/price_time_click"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="priceKind"
+                        android:id="@+id/register_day"
+                        android:layout_weight="1"
+                        android:background="@drawable/price_day_click"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="priceKind"
+                        android:id="@+id/etc"
+                        android:layout_weight="1"
+                        android:background="@drawable/price_nego_click"/>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/nego_long"
+                        android:visibility="gone"
+                        android:background="@drawable/price_nego_long"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal">
+                    <EditText
+                        android:id="@+id/register_price"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="17dp"
+                        android:gravity="right"
+                        android:background="@null"
+                        android:inputType="number"
+                        android:layout_marginRight="3dp"
+                        android:textColorHint="#646464"
+                        android:hint="가격 입력"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:textColor="#646464"
+                        android:text="원"
+                        android:gravity="right" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--위치 등록-->
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/delete_register_item"
+                    android:src="@drawable/regist_undo"
+                    android:background="@android:color/transparent"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/register"
+                    android:src="@drawable/regist_do"
+                    android:onClick="itemregist_do"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 등록/삭제 버튼-->
+
+</ScrollView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nadoo.tacademy.eunbyul_nanu">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="ACCESS_COARSE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GirlTheme">
+        <meta-data
+            android:name="com.nadoo.tacademy.eunbyul_nanu.NaDooGlideModule"
+            android:value="GlideModule" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity
+            android:name=".CameraActivity"
+            android:hardwareAccelerated="false" />
+        <activity android:name=".Fillter" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".ItemPage" />
+        <activity android:name=".Profile.Profile" />
+        <activity
+            android:name=".Search"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".RegisterItem"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".RegisterWrite"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".MypageItem"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".AddFriends"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".MypageFriend"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Profile.ProfileWantItem" />
+        <activity android:name=".Profile.ProfileItem" />
+        <activity android:name=".ReportActivity" />
+        <activity android:name=".Fillter_want" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".RegisterWriteMapActivity" />
+        <activity android:name=".RegisterItemMapActivity" />
+        <activity android:name=".BoardFragment" />
+        <activity android:name=".BoardReply" />
+        <activity android:name=".NewBoardRegister" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".Join.MembershipActivityStep1" />
+        <activity android:name=".Join.MembershipActivityStep2" />
+        <activity android:name=".Join.MembershipActivityStep3" />
+        <activity android:name=".ModifyWrite" />
+        <activity android:name=".NoticeActivity" />
+        <activity android:name=".LastTopicActivity" />
+        <activity android:name=".ModifyItem" />
+        <activity android:name=".ModifyWriteMapActivity" />
+        <activity
+            android:name=".MypageNeed"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ModifyItemMapActivity" />
+        <activity android:name=".MypageItemPage" />
+        <activity android:name=".Profile.ProfileItemPage" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".ChattingList"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.nadoo.tacademy.eunbyul_nanu.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:readPermission="com.nadoo.tacademy.eunbyul_nanu.fileprovider.READ">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".ChattingList"></activity>
+    </application>
+
+</manifest>

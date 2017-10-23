@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "284961190974",
+    "firebase_url": "https://nadoo-a67b1.firebaseio.com",
+    "project_id": "nadoo-a67b1",
+    "storage_bucket": "nadoo-a67b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284961190974:android:d1a10b9cda00765b",
+        "android_client_info": {
+          "package_name": "com.nadoo.tacademy.eunbyul_nanu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284961190974-m366k03k8ffrigfdi4abt5aen5rr72l0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nadoo.tacademy.eunbyul_nanu",
+            "certificate_hash": "5653ea7a64c8c3ec46af9cc5373114fb32e2d2a2"
+          }
+        },
+        {
+          "client_id": "284961190974-r92cih4d9v4kl6bj5cm1uaae3fl4heuf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr0Fqam4__oyna9UFV8oQ2uSdhmlvAqgA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "284961190974-r92cih4d9v4kl6bj5cm1uaae3fl4heuf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

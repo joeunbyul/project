@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:src="@drawable/progressbar_3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="82.3dp"
+            android:layout_marginBottom="23.3dp"
+            android:src="@drawable/step_4_guide"
+            />
+        <EditText
+            android:id="@+id/join_schoolemail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="학교 메일 아이디"
+            android:background="@null"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.3dp"
+            android:src="@drawable/line"/>
+        <TextView
+            android:id="@+id/join_schooladdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="학교 메일 주소"
+            android:background="@null"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/line"/>
+        <ImageButton
+            android:id="@+id/mail_sending_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mail_sending"
+            android:onClick="onClickView"
+            android:layout_marginTop="44dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@null"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/domain_error_guide"/>
+        <ImageButton
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="156dp"
+            android:src="@drawable/step_pass"
+            android:background="@null"/>
+        </LinearLayout>
+
+</LinearLayout>

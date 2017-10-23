@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#eb675e"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="123.3dp"
+                android:layout_marginRight="123.3dp"
+                android:src="@drawable/map_title" />
+        </FrameLayout>
+
+        <!-- 지도 프래그먼트 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment
+                android:id="@+id/read_write_map"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" >
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="top">
+                    <AutoCompleteTextView
+                        android:id="@+id/autocomplte_search"
+                        android:layout_width="300dp"
+                        android:layout_height="36dp"
+                        android:drawableLeft="@drawable/search_red"
+                        android:background="@drawable/edittext_border"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="15dp"
+                        android:hint="주소명을 입력해주세요."
+                        android:textColorHint="#909090"
+                        android:imeOptions="actionDone"
+                        />
+
+                </LinearLayout>
+
+            </fragment>
+            <LinearLayout
+                android:id="@+id/mapinfo_detail"
+                android:layout_width="match_parent"
+                android:layout_height="106dp"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:layout_alignParentBottom="true"
+                android:visibility="invisible">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mapinfo_title"
+                    android:maxLines="1"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginTop="28dp"
+                    android:textSize="17.3dp"
+                    android:text="제목"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mapinfo_contents"
+                    android:maxLines="1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="24dp"
+                    android:textSize="13dp"
+                    android:text="내용"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

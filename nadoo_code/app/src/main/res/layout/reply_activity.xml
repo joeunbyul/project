@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D000000">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#eb675e">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/tab_title_feed"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+       >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+            <ImageButton
+                android:id="@+id/detail_checkbox_my_feed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/checkbox_my_feed_onclick"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <!-- 메인 글-->
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/main_cardview"
+            android:layout_marginTop="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="8dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/detail_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:layout_marginBottom="3.7dp"
+                            android:text="제목"
+                            android:gravity="left"/>
+                        <TextView
+                            android:id="@+id/detail_contents"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="내용내용내용내용"
+                            android:textSize="10sp"/>
+                        <!--
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="18.3dp"
+                            >
+
+                        </LinearLayout>
+                      -->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="16dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="댓글"
+                        android:textSize="10sp"/>
+                    <TextView
+                        android:id="@+id/board_detail_reply_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:gravity="right"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text=" "/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="추천"
+                        android:textSize="10sp"/>
+                    <TextView
+                        android:id="@+id/board_detail_recommand_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:textSize="10sp"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                  >
+                    <ImageButton
+                        android:id="@+id/board_modify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:src="@drawable/board_edit"
+                        android:background="@null"
+                        android:layout_weight="1"/>
+
+                    <ImageButton
+                        android:id="@+id/board_delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/board_delete"
+                        android:background="@null"
+                        android:onClick="onClickDialogView"
+                       android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.3dp"
+                android:layout_marginBottom="6.3dp"
+                android:layout_marginLeft="24dp"
+                android:text="댓글"
+                android:textSize="10sp"/>
+            <TextView
+                android:id="@+id/board_reply_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.3dp"
+                android:layout_marginBottom="6.3dp"
+                android:textSize="10sp"
+               />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/reply_recyclerview"
+            android:background="#ffffff">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>
+

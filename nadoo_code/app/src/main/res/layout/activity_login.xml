@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="65dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+        <!--이메일 & 비밀번호 로그인 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/loginpage_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="dmsquf"
+                android:hint="이메일"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_1" />
+
+            <EditText
+                android:id="@+id/loginpage_pw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:text="dmsquf"
+                android:hint="비밀번호"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/line_2" />
+
+        </LinearLayout>
+        <!-- 비밀번호 찾기 & 회원가입 -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            >
+            <ImageButton
+                android:id="@+id/find_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/finding_password"
+                android:background="@null"/>
+            <ImageButton
+                android:id="@+id/membership"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/membership_before"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32.3dp"
+            android:layout_gravity="center_horizontal">
+            <ImageButton
+                android:id="@+id/loginpage_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src ="@drawable/login"
+                android:background="@null"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            >
+            <ImageButton
+                android:id="@+id/facebook_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20.3dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/facenook"/>
+            <ImageButton
+                android:id="@+id/kakao_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:src = "@drawable/kakaotalk"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

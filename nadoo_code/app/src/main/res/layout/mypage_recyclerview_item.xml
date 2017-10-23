@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   >
+  <android.support.v7.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="1dp">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+
+          <FrameLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+              <ImageView
+                  android:layout_width="100dp"
+                  android:layout_height="100dp"
+                  android:id="@+id/mypage_item_image"
+                  android:layout_marginTop="8dp"
+                  android:layout_marginLeft="8dp"
+                  android:layout_marginBottom="8dp"
+                  android:layout_marginRight="8dp" />
+              <ImageView
+                  android:id="@+id/item_state"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"/>
+          </FrameLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:orientation="vertical"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="16dp"
+              android:layout_marginBottom="20dp">
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/mypage_item_title"
+                  android:textSize="15dp"
+                  android:layout_marginBottom="7dp"/>
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/mypage_item_price"/>
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/mypage_item_priceKind"/>
+              </LinearLayout>
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/mypage_item_location"/>
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_gravity="center">
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="5dp"
+                  android:layout_marginLeft="4dp"
+                  android:orientation="horizontal">
+                  <ImageButton
+                      android:id="@+id/mypage_item_edit"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/list_edit"
+                      android:layout_marginRight="8dp"
+                      android:background="@android:color/transparent"/>
+                  <ImageButton
+                      android:id="@+id/mypage_item_delete"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:src="@drawable/list_delete"
+                      android:background="@android:color/transparent"/>
+              </LinearLayout>
+              <ImageButton
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/mypage_item_state"
+                  android:layout_marginRight="20dp"
+                  android:src="@drawable/status"
+                  android:background="@android:color/transparent"/>
+           </LinearLayout>
+
+      </LinearLayout>
+
+  </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

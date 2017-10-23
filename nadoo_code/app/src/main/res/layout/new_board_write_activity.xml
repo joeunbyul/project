@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D000000"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="#eb675e">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/tab_title_feed"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="vertical"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="3dp"
+        android:background="#ffffff">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/write_list_title"
+            android:maxLines="1"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textColorHint="#0D000000"
+            android:hint="제목을 입력해 주세요."
+            android:background="@null"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:background="#ffffff">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/write_list_contents"
+            android:layout_marginLeft="15dp"
+            android:maxLines="5"
+            android:textColor="#000000"
+            android:textColorHint="#0D000000"
+            android:background="@null"
+            android:hint="내용을 입력해 주세요."
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <ImageButton
+                android:id="@+id/board_register_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/board_reply_cancel_img"
+                android:layout_marginLeft="16dp"
+                android:layout_alignParentLeft="true"
+                android:background="@null"/>
+            <ImageButton
+                android:id="@+id/board_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/register"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:onClick="register_board"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <ImageButton
+                android:id="@+id/secret_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/secret_mode_click"
+                android:onClick="check_anonymity"
+               />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

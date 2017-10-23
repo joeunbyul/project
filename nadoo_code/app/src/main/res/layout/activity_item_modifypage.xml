@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_item_page"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="com.nadoo.tacademy.eunbyul_nanu.ItemPage">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="165dp">
+            <ImageView
+                android:id="@+id/itemPage_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/photo_1"
+                android:background="@android:color/transparent"/>
+            <ImageView
+                android:id="@+id/itemPage_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="132.3dp"
+                android:src="@drawable/item_condition_1"
+                android:background="@android:color/transparent"/>
+        </FrameLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="19.7dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/itemPage_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"/>
+                    <TextView
+                        android:id="@+id/itemPage_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:textSize="16dp"
+                        android:textColor="#000000"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/itemPage_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:textSize="16dp"
+                            android:textColor="#000000"/>
+                        <TextView
+                            android:id="@+id/itemPage_days"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="16dp"
+                            android:textColor="#000000"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/itemPage_user"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="0.7dp"/>
+                    <TextView
+                        android:id="@+id/itemPage_nickname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="13.5dp"
+                        android:textSize="13dp"
+                        android:textColor="#2e2e2e"/>
+                    <ImageView
+                        android:id="@+id/itemPage_check"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="19.7dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@android:color/transparent"/>
+                <TextView
+                    android:id="@+id/itemPage_article"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#979797" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <fragment
+            android:id="@+id/item_location"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="9.7dp"
+            class="com.google.android.gms.maps.SupportMapFragment"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+    
+    
+</ScrollView>
